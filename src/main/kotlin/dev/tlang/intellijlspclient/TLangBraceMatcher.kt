@@ -7,10 +7,11 @@ import com.intellij.psi.tree.IElementType
 import dev.tlang.intellijlspclient.TLangParserDefinition.TLangParserDefinitionObject.TOKEN_ELEMENT_TYPES
 import dev.tlang.parser.TLangLexer
 
-class TLangBraceMatcher  : PairedBraceMatcher {
+class TLangBraceMatcher : PairedBraceMatcher {
     override fun getPairs(): Array<out BracePair> = arrayOf(
-//        BracePair(TOKEN_ELEMENT_TYPES[JasmLexer.LPAREN], TOKEN_ELEMENT_TYPES[JasmLexer.RPAREN], false),
-//        BracePair(TOKEN_ELEMENT_TYPES[JasmLexer.LSQUARE], TOKEN_ELEMENT_TYPES[JasmLexer.RSQUARE], false),
+        BracePair(TOKEN_ELEMENT_TYPES[TLangLexer.INTEPRETED], TOKEN_ELEMENT_TYPES[TLangLexer.RBRACE], false),
+        BracePair(TOKEN_ELEMENT_TYPES[TLangLexer.LPARENT], TOKEN_ELEMENT_TYPES[TLangLexer.RPARENT], false),
+        BracePair(TOKEN_ELEMENT_TYPES[TLangLexer.LSQUARE], TOKEN_ELEMENT_TYPES[TLangLexer.RSQUARE], false),
         BracePair(TOKEN_ELEMENT_TYPES[TLangLexer.LBRACE], TOKEN_ELEMENT_TYPES[TLangLexer.RBRACE], true),
     )
 

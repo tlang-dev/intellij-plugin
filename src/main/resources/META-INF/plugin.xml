@@ -55,8 +55,8 @@
 
          <colorSettingsPage implementation="dev.tlang.intellijlspclient.TLangColorSettingsPage"/>
 
-        <codeStyleSettingsProvider
-                implementation="dev.tlang.intellijlspclient.TLangCodeStyleSettingsProvider"/>
+<!--        <codeStyleSettingsProvider-->
+<!--                implementation="dev.tlang.intellijlspclient.TLangCodeStyleSettingsProvider"/>-->
 
         <langCodeStyleSettingsProvider
                 implementation="dev.tlang.intellijlspclient.TLangLanguageCodeStyleSettingsProvider"/>

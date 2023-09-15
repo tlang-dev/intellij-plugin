@@ -377,6 +377,18 @@ public class TLangTmplBaseListener implements TLangTmplListener {
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
+	@Override public void enterTmplCallObjLink(TLangTmplParser.TmplCallObjLinkContext ctx) { }
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>The default implementation does nothing.</p>
+	 */
+	@Override public void exitTmplCallObjLink(TLangTmplParser.TmplCallObjLinkContext ctx) { }
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>The default implementation does nothing.</p>
+	 */
 	@Override public void enterTmplCallObjType(TLangTmplParser.TmplCallObjTypeContext ctx) { }
 	/**
 	 * {@inheritDoc}
@@ -732,6 +744,18 @@ public class TLangTmplBaseListener implements TLangTmplListener {
 	 * <p>The default implementation does nothing.</p>
 	 */
 	@Override public void exitTmplIdOrString(TLangTmplParser.TmplIdOrStringContext ctx) { }
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>The default implementation does nothing.</p>
+	 */
+	@Override public void enterTmplSpecialBlock(TLangTmplParser.TmplSpecialBlockContext ctx) { }
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>The default implementation does nothing.</p>
+	 */
+	@Override public void exitTmplSpecialBlock(TLangTmplParser.TmplSpecialBlockContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *

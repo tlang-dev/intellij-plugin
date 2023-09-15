@@ -308,6 +308,16 @@ public interface TLangTmplListener extends ParseTreeListener {
 	 */
 	void exitTmplCallObj(TLangTmplParser.TmplCallObjContext ctx);
 	/**
+	 * Enter a parse tree produced by {@link TLangTmplParser#tmplCallObjLink}.
+	 * @param ctx the parse tree
+	 */
+	void enterTmplCallObjLink(TLangTmplParser.TmplCallObjLinkContext ctx);
+	/**
+	 * Exit a parse tree produced by {@link TLangTmplParser#tmplCallObjLink}.
+	 * @param ctx the parse tree
+	 */
+	void exitTmplCallObjLink(TLangTmplParser.TmplCallObjLinkContext ctx);
+	/**
 	 * Enter a parse tree produced by {@link TLangTmplParser#tmplCallObjType}.
 	 * @param ctx the parse tree
 	 */
@@ -607,6 +617,16 @@ public interface TLangTmplListener extends ParseTreeListener {
 	 * @param ctx the parse tree
 	 */
 	void exitTmplIdOrString(TLangTmplParser.TmplIdOrStringContext ctx);
+	/**
+	 * Enter a parse tree produced by {@link TLangTmplParser#tmplSpecialBlock}.
+	 * @param ctx the parse tree
+	 */
+	void enterTmplSpecialBlock(TLangTmplParser.TmplSpecialBlockContext ctx);
+	/**
+	 * Exit a parse tree produced by {@link TLangTmplParser#tmplSpecialBlock}.
+	 * @param ctx the parse tree
+	 */
+	void exitTmplSpecialBlock(TLangTmplParser.TmplSpecialBlockContext ctx);
 	/**
 	 * Enter a parse tree produced by {@link TLangTmplParser#assignVar}.
 	 * @param ctx the parse tree

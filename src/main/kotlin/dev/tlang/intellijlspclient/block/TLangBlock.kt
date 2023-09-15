@@ -23,6 +23,21 @@ open class TLangBlock(node: ASTNode, wrap: Wrap?, private val spacingBuilder: Sp
                 ruleType(TLangParser.RULE_modelBlock) -> TLangModelBlock(child, spacingBuilder)
                 ruleType(TLangParser.RULE_tmplBlock) -> TLangTmplBlock(child, spacingBuilder)
                 ruleType(TLangParser.RULE_helperFunc) -> TLangFuncBlock(child, spacingBuilder)
+                ruleType(TLangParser.RULE_helperIf) -> TLangGenericIndentedBlock(child, spacingBuilder)
+                ruleType(TLangParser.RULE_helperFor) -> TLangGenericIndentedBlock(child, spacingBuilder)
+                ruleType(TLangParser.RULE_tmplImpl) -> TLangGenericIndentedBlock(child, spacingBuilder)
+                ruleType(TLangParser.RULE_tmplIf) -> TLangGenericIndentedBlock(child, spacingBuilder)
+                ruleType(TLangParser.RULE_tmplFor) -> TLangGenericIndentedBlock(child, spacingBuilder)
+                ruleType(TLangParser.RULE_tmplWhile) -> TLangGenericIndentedBlock(child, spacingBuilder)
+                ruleType(TLangParser.RULE_tmplDoWhile) -> TLangGenericIndentedBlock(child, spacingBuilder)
+                ruleType(TLangParser.RULE_tmplPkg) -> TLangGenericIndentedBlock(child, spacingBuilder)
+                ruleType(TLangParser.RULE_tmplUse) -> TLangGenericIndentedBlock(child, spacingBuilder)
+                ruleType(TLangParser.RULE_modelContent) -> TLangGenericIndentedBlock(child, spacingBuilder)
+                ruleType(TLangParser.RULE_modelSetAttribute) -> TLangGenericIndentedBlock(child, spacingBuilder)
+                ruleType(TLangParser.RULE_operation) -> TLangGenericIndentedBlock(child, spacingBuilder)
+                ruleType(TLangParser.RULE_complexAttribute) -> TLangGenericIndentedBlock(child, spacingBuilder)
+                ruleType(TLangParser.RULE_tmplExpression) -> TLangGenericIndentedBlock(child, spacingBuilder)
+                ruleType(TLangParser.RULE_tmplFunc) -> TLangGenericIndentedBlock(child, spacingBuilder)
                 else -> TLangBlock(
                     child,
                     Wrap.createWrap(WrapType.NORMAL, false),

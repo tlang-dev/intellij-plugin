@@ -7,7 +7,7 @@ import com.intellij.openapi.options.colors.ColorSettingsPage
 
 
 class TLangColorSettingsPage : ColorSettingsPage {
-    companion object {
+    object Util {
         val DESCRIPTORS = arrayOf(
             AttributesDescriptor("Identifier", TLangSyntaxHighlighter.ID),
             AttributesDescriptor("Keyword", TLangSyntaxHighlighter.KEYWORD),
@@ -25,7 +25,7 @@ class TLangColorSettingsPage : ColorSettingsPage {
         )
     }
 
-    override fun getAttributeDescriptors() = DESCRIPTORS
+    override fun getAttributeDescriptors() = Util.DESCRIPTORS
 
     override fun getColorDescriptors(): Array<ColorDescriptor> = ColorDescriptor.EMPTY_ARRAY
 

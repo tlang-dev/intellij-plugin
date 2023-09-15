@@ -5,4 +5,4 @@ import com.intellij.formatting.Wrap
 import com.intellij.formatting.WrapType
 import com.intellij.lang.ASTNode
 
-class TLangModelBlock(node: ASTNode, spacingBuilder: SpacingBuilder): TLangBlock(node, Wrap.createWrap(WrapType.NORMAL, false), spacingBuilder)
+class TLangModelBlock(node: ASTNode, spacingBuilder: SpacingBuilder): TLangBlock(node, Wrap.createWrap(WrapType.ALWAYS, false), spacingBuilder)
